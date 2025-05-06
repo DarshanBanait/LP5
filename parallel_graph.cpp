@@ -2,6 +2,8 @@
 #include <vector>
 #include <queue>
 #include <omp.h>
+#include <thread>
+#include <chrono>
 
 using namespace std;
 
@@ -140,6 +142,7 @@ int main() {
     cin >> start;
 
     g.parallelBFS(start);
+    this_thread::sleep_for(chrono::seconds(5)); // optional delay for clarity in output
     g.parallelDFS(start);
 
     return 0;
