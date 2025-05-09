@@ -120,4 +120,10 @@ Parallel merge sort scales much better than bubble sort.
 Bubble sort (even parallelized) is inefficient for large inputs.
 
 For real applications, use merge/quick sort, not bubble sort.
+
+| Algorithm     | Sequential Time Complexity | Parallel Time Complexity | Scalability**                |
+| ------------- | -------------------------- | ------------------------ | ---------------------------- |
+| Bubble Sort   | O(n²)                      | O(n² / P) (ideal case)   | Poor (due to dependencies)   |
+| Merge Sort    | O(n log n)                 | O(log n) to O(n)         | Excellent (divide & conquer) |
+
 */

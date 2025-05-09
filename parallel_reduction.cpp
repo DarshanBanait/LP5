@@ -55,4 +55,11 @@ g++ -fopenmp parallel_reduction.cpp -o parallel_reduction.exe
 
 .\parallel_reduction.exe
 
+| Operation  | Complexity (Sequential) | Complexity (Parallel) | Notes                                   |
+| ---------- | ----------------------- | --------------------- | --------------------------------------- |
+| Finding Min| O(n)                    | O(n / P)              | Parallelized using `reduction(min:...)` |
+| Finding Max| O(n)                    | O(n / P)              | Parallelized using `reduction(max:...)` |
+| Sum        | O(n)                    | O(n / P)              | Parallelized using `reduction(+:...)`   |
+| Average    | O(1)                    | O(1)                  | Just one division                       |
+
 */

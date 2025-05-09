@@ -165,4 +165,9 @@ Enter number of edges: 7
 4 5
 Enter starting node for traversal: 0
 
+| Algorithm    | Total Work | Parallel Time (Span) | Speedup Depends On               |
+| ------------ | ---------- | -------------------- | -------------------------------- |
+| Parallel BFS | O(V + E)   | O(D + E/P)           | Graph diameter, #threads, load   |
+| Parallel DFS | O(V + E)   | O(depth of DFS tree) | Branching factor, #tasks/threads |
+
 */
