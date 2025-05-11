@@ -1,3 +1,18 @@
+### To install tensorflow and other packages on Ubuntu
+
+```bash
+sudo apt update
+sudo apt install python3-venv
+python3 -m venv tfenv
+source tfenv/bin/activate 
+pip install --upgrade pip
+pip install tensorflow
+pip install notebook
+pip install scikit-learn
+
+jupyter notebook -- Required Cmd for -> To Start Jupyter NoteBook
+```
+
 ### Install Required Python Packages
 
 Make sure you're using **Python 3.10** (TensorFlow is not compatible with Python 3.13+).
